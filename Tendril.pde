@@ -14,9 +14,9 @@ class Tendril
   
 public void show()
   {
-    if (myNumSegments > 8) {
+    if (myNumSegments > 30) {
       stroke(250, 25, 10);
-    } else if (myNumSegments > 2) {
+    } else if (myNumSegments > 29) {
       stroke(100, 130, 0);
     } else {
       stroke(80, 67, 41);
@@ -31,9 +31,11 @@ public void show()
       startX = endX;
       startY = endY;
       if ((i+1) == myNumSegments && (myNumSegments >= 3)) {
-        Cluster clus = new Cluster(myNumSegments/3, (int)endX, (int)endY);
+        System.out.println(myNumSegments);
+        Cluster clusy = new Cluster(myNumSegments-15, (int)endX, (int)endY);
       }
     }
     
   }
 }
+
