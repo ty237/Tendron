@@ -1,4 +1,4 @@
-public void setup()
+ public void setup()
 {
   size(500, 500);  
   background(255);
@@ -14,3 +14,4 @@ public void mousePressed()
 {
   redraw();
 }
+
