@@ -27,11 +27,11 @@ public void show()
       myAngle += (Math.random()*.2) - 0.2;
       float endX = (float)(startX + (Math.cos(myAngle)*SEG_LENGTH));
       float endY = (float)(startY + (Math.sin(myAngle)*SEG_LENGTH));
-      line((int)startX, (int)startY, (int)endX, (int)endY);
+      line(startX, startY, endX, endY);
       startX = endX;
       startY = endY;
       if ((i+1) == myNumSegments && (myNumSegments >= 3)) {
-        Cluster clus = new Cluster(myNumSegments-3, (int)endX, (int)endY);
+        Cluster clus = new Cluster(myNumSegments/3, (int)endX, (int)endY);
       }
     }
     
